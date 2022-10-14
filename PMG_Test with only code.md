@@ -1,12 +1,15 @@
 *  Question #1
 
 Select sum(clicks) as total_clicks
+
 From marketing_data
 
 *  Question #2
 
 select store_location, sum(revenue) as revenue
+
 from store_revenue 
+
 group by store_location
 
 *  Question #3
