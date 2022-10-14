@@ -58,6 +58,7 @@ where cte.date is not null and geo is not null
 group by geo,cte.date
 
 )
+
 select geo,sum(total_revenue)/sum(impressions) as revenue_per_impression, sum(total_revenue)/sum(clicks) as revenue_per_clicks, sum(total_revenue) as total_revenue
 
 from cte2
