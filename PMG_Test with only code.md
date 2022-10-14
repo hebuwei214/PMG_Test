@@ -33,9 +33,12 @@ group by geo,cte.date
 * Question #4
 
 
-Since there is no background description, I assume we are displaying advertisements for E-commerce. In addition, there is no cost of impressions or clicks, so I assume the cost per click and per impression is the same for different states, or we are marketing on social media like Instagram at no expense. 
+Since there is no background description, I assume we are analyzing marketing data for E-commerce. In addition, there is no cost of impressions or clicks, so I assume the cost per click and cost per impression is the same for different states, or we are marketing on social media like Instagram at no expense. 
 
-Therefore, I can use revenue per click and revenue per impression as metrics for calculating the efficiency of each store. I get revenue per impression for the store in CA is 10.42, which is much higher than in NY(2.59) and TX(0.57). And revenue per click for the store in CA is 758, which is also much higher than in NY(214) and TX(40). In conclusion, the store in CA is the most efficient.
+With these assumptions, I can use revenue per click and revenue per impression as metrics for calculating the efficiency of each store. I get revenue per impression for the store in CA is 10.42, which is much higher than in NY(2.59) and TX(0.57). And revenue per click for the store in CA is 758, which is also much higher than in NY(214) and TX(40). In conclusion, the store in CA is the most efficient.
+
+
+Following is the SQL Query for Question #4
 
 
 with cte as(
